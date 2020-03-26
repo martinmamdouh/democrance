@@ -81,7 +81,7 @@ target/
 *.pot
 *.pyc
 config.json
-__pycache__/
+__pycache__
 local_settings.py
 .env
 db.sqlite3
