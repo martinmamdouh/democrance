@@ -10,7 +10,7 @@ class InsurancePolicy(models.Model):
     cover = models.IntegerField(null=False, blank=False, validators=[
         MinValueValidator(
             0, "cover field should be an interger number greater than Zero.")])
-    models.OneToOneField(
+    customer = models.OneToOneField(
         Customer, on_delete=models.PROTECT,  null=False, blank=False)
 
     class Meta:
