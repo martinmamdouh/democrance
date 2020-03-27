@@ -5,7 +5,7 @@ from insurance_policy.models import InsurancePolicy
 
 class InsurancePolicyApi(viewsets.ModelViewSet):
     """
-    A viewset for viewing and editing insurance policy instances.
+    A viewset for creating new insurance policy instances.
     """
     serializer_class = InsurancePolicySerializer
     queryset = InsurancePolicy.objects.all()
