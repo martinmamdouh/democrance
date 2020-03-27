@@ -17,4 +17,4 @@ class InsurancePolicy(models.Model):
         db_table = 'insurance_policy'
 
     def __str__(self):
-        return self.premium
+        return f'{self.type} - {self.premium}'

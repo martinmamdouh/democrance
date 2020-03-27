@@ -1,3 +1,3 @@
 from django.contrib import admin
-
-# Register your models here.
+from insurance_policy.models import InsurancePolicy
+admin.site.register(InsurancePolicy)

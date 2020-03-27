@@ -17,19 +17,4 @@ def createCustomer():
     print(r.text)
 
 
-def createPolicy():
-    data = {"type": "personal-accident",
-            "premium": 200,
-            "cover": 200000, "customer": 1}
-    r = requests.post(
-        'http://127.0.0.1:8000/api/v1/create_policy/', data=data)
-
-    print(r.encoding)
-    print(r.status_code)
-    # print(r.json())
-    print(r.text)
-
-
-# getAllCusomers()
-# createCustomer()
-createPolicy()
+createCustomer()
