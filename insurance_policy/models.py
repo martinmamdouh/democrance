@@ -6,10 +6,10 @@ from customer.models import Customer
 class InsurancePolicy(models.Model):
     type = models.CharField(max_length=50, null=False, blank=False)
     premium = models.IntegerField(null=False, blank=False, validators=[
-                                  MinValueValidator(0, "premium field should be an interger number greater than Zero.")])
+                                  MinValueValidator(0, "Premium field should be an interger number greater than Zero.")])
     cover = models.IntegerField(null=False, blank=False, validators=[
         MinValueValidator(
-            0, "cover field should be an interger number greater than Zero.")])
+            0, "Cover field should be an interger number greater than Zero.")])
     customer = models.OneToOneField(
         Customer, on_delete=models.PROTECT,  null=False, blank=False)
 

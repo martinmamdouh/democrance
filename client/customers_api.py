@@ -6,8 +6,8 @@ import datetime
 
 
 def createCustomer():
-    data = {"first_name": "martin", "last_name": "mamdouh",
-            "dob": datetime.date(1989, 10, 4)}
+    data = {"first_name": "eriny", "last_name": "usama",
+            "dob": datetime.date(1994, 3, 30)}
     r = requests.post(
         'http://127.0.0.1:8000/api/v1/create_customer/', data=data)
 
