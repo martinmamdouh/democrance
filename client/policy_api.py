@@ -5,7 +5,8 @@ headers = {'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2t
 def createPolicy():
     data = {"type": "personal-accident",
             "premium": 200,
-            "cover": 200000, "customer": 2}
+            "cover": 200000, 
+            "customer": 2}
     r = requests.post(
         'http://127.0.0.1:8000/api/v1/create_policy/', data=data)
 
