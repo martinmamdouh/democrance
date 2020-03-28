@@ -1,4 +1,10 @@
 from django.contrib import admin
 from customer.models import Customer
 # Register your models here.
-admin.site.register(Customer)
+
+
+class CustomerAdmin(admin.ModelAdmin):
+    readonly_fields = ('id',)
+
+
+admin.site.register(Customer, CustomerAdmin)
